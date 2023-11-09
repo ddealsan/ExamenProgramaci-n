@@ -10,7 +10,7 @@ int main(){
 
     int suma = a + b;//realizamos la suma
 
-    cout << "La suma es: " << suma << endl; //imprimimos el resultado
+    cout << "La suma es: " << suma << endl; //imprimimos el resultados
 
     return 0;
 }
