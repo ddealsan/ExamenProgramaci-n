@@ -10,11 +10,11 @@ class Estudiante {
         int edad;
         string grado;
     public:
-        Estudiante(string, int, string, string);
+        Estudiante(string, int, string);
         void mostrar_info();
 };
 
-Estudiante::Estudiante(string _nombre, int _edad, string _grado, string _seccion){
+Estudiante::Estudiante(string _nombre, int _edad, string _grado){
     nombre = _nombre;
     edad = _edad;
     grado = _grado;
@@ -26,3 +26,13 @@ void Estudiante::mostrar_info(){
     cout << "Grado: " << grado << endl;
 }
 
+int main(){
+    Estudiante estudiante1("Juan", 15, "9");
+
+    Estudiante estudiante2("Maria", 16, "10");
+
+    estudiante1.mostrar_info();
+    estudiante2.mostrar_info();
+
+    return 0;
+    }
