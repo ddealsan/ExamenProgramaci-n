@@ -20,5 +20,9 @@ Estudiante::Estudiante(string _nombre, int _edad, string _grado, string _seccion
     grado = _grado;
 }
 
-
+void Estudiante::mostrar_info(){
+    cout << "Nombre: " << nombre << endl;
+    cout << "Edad: " << edad << endl;
+    cout << "Grado: " << grado << endl;
+}
 
