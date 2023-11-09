@@ -20,3 +20,14 @@ public:
         cout << "Nombre: " << nombre << ", Edad: " << edad << ", Grado: " << grado << endl;
     }
 };
+
+vector<Estudiante> filtrarEstudiantesPorGrado(const vector<Estudiante>& estudiantes, const string& grado) {
+    vector<Estudiante> estudiantesFiltrados;
+    for (const Estudiante& estudiante : estudiantes) {
+        if (estudiante.obtenerGrado() == grado) {
+            estudiantesFiltrados.push_back(estudiante);
+        }
+    }
+    return estudiantesFiltrados;
+}
+
