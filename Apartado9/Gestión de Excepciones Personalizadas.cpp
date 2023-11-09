@@ -60,8 +60,6 @@ int main() {
 
     return 0;
 }
-Ahora se ha agregado using namespace std al principio del código para evitar tener que usar std:: antes de las clases y funciones de la biblioteca estándar.
-
 
 
 
