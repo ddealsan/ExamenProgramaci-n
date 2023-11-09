@@ -4,9 +4,9 @@
 
 using namespace std;
 
-class Estudiante {
+class Estudiante {//cramos la clase estudiante
     private:
-        string nombre;
+        string nombre;//definimos lo que hay dentro de ella
         int edad;
         string grado;
     public:
@@ -20,18 +20,18 @@ Estudiante::Estudiante(string _nombre, int _edad, string _grado){
     grado = _grado;
 }
 
-void Estudiante::mostrar_info(){
+void Estudiante::mostrar_info(){//definimos el mostrar informacion
     cout << "Nombre: " << nombre << endl;
     cout << "Edad: " << edad << endl;
     cout << "Grado: " << grado << endl;
 }
 
-int main(){
+int main(){//definimos el main
     Estudiante estudiante1("Juan", 15, "9");
+    cout<<"\n";
+    Estudiante estudiante2("Maria", 16, "10");//creamos los estudiantes
 
-    Estudiante estudiante2("Maria", 16, "10");
-
-    estudiante1.mostrar_info();
+    estudiante1.mostrar_info();//mostramos la informacion
     estudiante2.mostrar_info();
 
     return 0;
