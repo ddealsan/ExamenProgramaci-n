@@ -5,14 +5,14 @@
 
 using namespace std;
 
-class MateriaYaRegistradaException : public exception {
+class MateriaYaRegistradaException : public exception {//creamos la clase MateriaYaRegistradaException
 public:
     const char* what() const throw() {
         return "Error: La materia ya ha sido registrada.";
     }
 };
 
-class Estudiante {
+class Estudiante {//cramos la clase estudiante
 private:
     string nombre;
     int edad;
@@ -22,7 +22,7 @@ private:
 public:
     Estudiante(string _nombre, int _edad, string _grado) : nombre(_nombre), edad(_edad), grado(_grado) {}
 
-    string obtenerGrado() const {
+    string obtenerGrado() const {//definimos el obtener grado
         return grado;
     }
 
@@ -44,11 +44,11 @@ public:
 };
 
 int main() {
-    try {
+    try {//definimos el main
         Estudiante estudiante1("Juan", 15, "9A");
 
         estudiante1.registrarMateria("Matemáticas");
-        estudiante1.registrarMateria("Historia");
+        estudiante1.registrarMateria("Historia");//añadimos las materias
 
         // Intentar registrar la misma materia nuevamente (debería lanzar la excepción)
         estudiante1.registrarMateria("Matemáticas");
