@@ -50,10 +50,10 @@ int main(){//definimos el main
 
     estudiante1.mostrar_info();//mostramos la informacion
 string materia1;
-    cout <<" que materia desea añadir?"<<endl;
+    cout <<" que materia desea añadir?"<<endl;//añadimos la materia
     cin>>materia1;
-    estudiante1.registrar_materia(materia1);
-    estudiante1.mostrar_materias();
+    estudiante1.registrar_materia(materia1);//añadimos la materia
+    estudiante1.mostrar_materias();//mostramos la materia
 
     return 0;
 }
