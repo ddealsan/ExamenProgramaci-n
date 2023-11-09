@@ -47,11 +47,13 @@ void Estudiante::mostrar_materias() {
 
 int main(){//definimos el main
     Estudiante estudiante1("Juan", 15, "9");
-    cout<<"\n";
-    Estudiante estudiante2("Maria", 16, "10");//creamos los estudiantes
 
     estudiante1.mostrar_info();//mostramos la informacion
-    estudiante2.mostrar_info();
+string materia1;
+    cout <<" que materia desea añadir?"<<endl;
+    cin>>materia1;
+    estudiante1.registrar_materia(materia1);
+    estudiante1.mostrar_materias();
 
     return 0;
 }
