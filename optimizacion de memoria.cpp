@@ -13,4 +13,6 @@ cout << "valores origniales de A y B: " << A << " " << B << endl;
 int*a = &A;
 int*b = &B;
 intercambio(a, b);
+cout << "valores intercambiados de A y B: " << A << " " << B << endl;
+return 0;
 }
