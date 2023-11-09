@@ -42,3 +42,27 @@ public:
         }
     }
 };
+
+int main() {
+    try {
+        Estudiante estudiante1("Juan", 15, "9A");
+
+        estudiante1.registrarMateria("Matemáticas");
+        estudiante1.registrarMateria("Historia");
+
+        // Intentar registrar la misma materia nuevamente (debería lanzar la excepción)
+        estudiante1.registrarMateria("Matemáticas");
+
+        estudiante1.mostrarMaterias();
+    } catch (const MateriaYaRegistradaException& e) {
+        cerr << "Excepción: " << e.what() << endl;
+    }
+
+    return 0;
+}
+Ahora se ha agregado using namespace std al principio del código para evitar tener que usar std:: antes de las clases y funciones de la biblioteca estándar.
+
+
+
+
+
