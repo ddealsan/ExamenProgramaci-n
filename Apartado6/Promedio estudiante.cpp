@@ -31,8 +31,8 @@ int main(){
         calificaciones.push_back(calificacion);
     }
 
-    double promedio = calcularPromedio(calificaciones);
-    cout << "El promedio de las calificaciones es: " << promedio << endl;//
+    double promedio = calcularPromedio(calificaciones);//llamamos a la funcion
+    cout << "El promedio de las calificaciones es: " << promedio << endl;//imprimimos el resultado
 
     return 0;
 }
